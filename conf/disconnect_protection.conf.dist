@@ -1,0 +1,33 @@
+#
+# Copyright (C) 2016+ AzerothCore <www.azerothcore.org>, released under GNU AGPL v3 license: https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE-AGPL3
+#
+
+[worldserver]
+
+########################################
+# Disconnect Protection Configuration
+########################################
+#
+#    DisconnectProtection.Enable
+#        Description: Enable disconnect protection module that casts Divine Intervention on all players when connectivity is lost
+#        Default:     0 - Disabled
+#                     1 - Enabled
+#
+
+DisconnectProtection.Enable = 1
+
+#
+#    DisconnectProtection.CheckInterval
+#        Description: Interval in milliseconds between connectivity checks
+#        Default:     1000 (1 second)
+#
+
+DisconnectProtection.CheckInterval = 1000
+
+#
+#    DisconnectProtection.UnreachableThreshold
+#        Description: Duration in seconds both URLs must be unreachable before triggering protection
+#        Default:     3
+#
+
+DisconnectProtection.UnreachableThreshold = 3
